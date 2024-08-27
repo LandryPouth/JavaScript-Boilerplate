@@ -16,7 +16,7 @@ npm init -y
 Installe Webpack, Babel, et les autres dépendances nécessaires :
 
 ```bash
-npm install --save-dev webpack webpack-cli webpack-dev-server babel-loader @babel/core @babel/preset-env html-webpack-plugin clean-webpack-plugin sass-loader sass
+npm install --save-dev webpack webpack-cli webpack-dev-server babel-loader @babel/core @babel/preset-env html-webpack-plugin clean-webpack-plugin sass-loader sass style-loader css-loader
 ```
 
 ## 3. Structure du projet

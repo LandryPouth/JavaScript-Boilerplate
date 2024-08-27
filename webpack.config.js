@@ -1,6 +1,6 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -18,8 +18,8 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
     ],
   },
@@ -31,7 +31,7 @@ module.exports = {
   ],
   devServer: {
     static: "./dist",
-    hot: true, // Active le Hot Module Replacement
+    hot: true, // Active le Hot Module Replacement pour JS et CSS
     open: true, // Ouvre automatiquement le navigateur
     watchFiles: ["src/**/*.html"], // Surveille les changements dans les fichiers HTML
   },
